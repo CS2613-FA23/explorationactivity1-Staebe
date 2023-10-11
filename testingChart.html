@@ -1,0 +1,60 @@
+<div>
+  <canvas id="myChart" width="240px" height="240px"></canvas>
+</div>
+<div>
+  <canvas id="myChart2" width="240px" height="240px"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  const ctx1 = document.getElementById('myChart').getContext('2d');
+  const topics = ["Py-1", "Py-2", "Py-3","JS-1", "JS-2", "JS-3", "Racket-1", "Racket-2", "Racket-3", "Octave-1", "Octave-2", "Octave-3"];
+  const choices = [0, 9, 4, 4, 8, 0, 3, 2, 0, 7, 1 ,0];
+  const barColors = ["red", "red","red","orange", "orange", "orange","yellow", "yellow", "yellow", "green", "green", "green"];
+
+
+  new Chart(ctx1, {
+    type: 'bar',
+    data: {
+    labels: topics,
+    datasets: [{
+      label: 'Week 3 choices for PQs',
+      backgroundColor: barColors,
+      data: choices
+    }]
+  },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+
+  const ctx2 = document.getElementById('myChart2').getContext('2d');
+  const players = ["Josh Jacobs", "Austin Ekeler", "Derrick Henry", "Christian McCaffrey", "Nick Chubb"];
+  const pts = [277.3, 271.7, 271.6, 266.0, 254.4];
+  const barColors2 = ["red", "orange", "yellow", "green", "blue"] 
+
+  new Chart(ctx2, {
+    type: 'polarArea',
+    data: {
+    labels: players,
+    datasets: [{
+      label: 'Top 5 fantasy running backs in 2022',
+      backgroundColor: barColors2,
+      data: pts,
+    }]
+  },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+
+</script>
