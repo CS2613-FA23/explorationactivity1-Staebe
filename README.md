@@ -1,7 +1,7 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/oB7VDeFN)
 # ExplorationActivity1
 ## Question 1: What library
-The library I use for the first instance of the exploration projects is a JavaScript library called Charts.js. It's functionality is that it creates an  HTML extension in the browser of your choice and displays your data in the form of various graphs and charts.
+The library I use for the first instance of these projects is a JavaScript library called Charts.js. The part of the library I used for my exploration activity is the bar and polar area charts among many different options.
 ## Question 2: How to run
 To run this file you must have some sort of text editer and terminal combination. I used Visual Studio as it is my standard text editor and it also very easy to use in terms of html web pages and has the terminal built in. To run my file you can either press _Run_ on the taskbar and choose the _Start Debugging_ in the dropdown and it will proceed to open up the broswer of your choice conversely you can run it through a terminal. Like usual you must traverse to the directory that the file is stored in, the command to run is: _google-chrome testingChart.html_ this is just an example because I am partial to Chrome but any web browser will do.
 ## Question 3: Purpose
